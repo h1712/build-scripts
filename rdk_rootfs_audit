@@ -34,9 +34,9 @@ import glob
 import fnmatch
 
 from binaryUsage import output_binary_usage_report
-from RDKEAuditUtils import RDKELayerInterface, MinimalPackageInfo, add_poky_scripts_to_sys_path, get_layer_version_info, get_depends_dict, get_required_by_dict, filter_csv_report, get_max_workers, RuntimeProfiler, packages_from_manifest
+from RDKEAuditUtils import RDKELayerInterface, MinimalPackageInfo, add_openembedded_core_scripts_to_sys_path, get_layer_version_info, get_depends_dict, get_required_by_dict, filter_csv_report, get_max_workers, RuntimeProfiler, packages_from_manifest
 
-add_poky_scripts_to_sys_path()
+add_openembedded_core_scripts_to_sys_path()
 
 import scriptutils
 import argparse_oe

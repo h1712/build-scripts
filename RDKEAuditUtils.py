@@ -32,9 +32,9 @@ import re
 import csv
 
 
-def add_poky_scripts_to_sys_path():
+def add_openembedded_core_scripts_to_sys_path():
     build_scripts_path=os.path.dirname(os.path.realpath(__file__))
-    lib_path = os.path.dirname(build_scripts_path) + '/rdke/common/poky/scripts/lib'
+    lib_path = os.path.dirname(build_scripts_path) + '/rdke/common/openembedded-core/scripts/lib'
     sys.path = sys.path + [lib_path]
 
 def get_layer_version_info(tinfoil):
@@ -50,7 +50,7 @@ def get_layer_version_info(tinfoil):
         info+=f"{uri}\n"
     return info
 
-add_poky_scripts_to_sys_path()
+add_openembedded_core_scripts_to_sys_path()
 import scriptutils
 
 logger = scriptutils.logger_create('rdk_rootfs_audit_utils')
